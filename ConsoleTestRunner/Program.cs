@@ -76,7 +76,7 @@ namespace ConsoleTestRunner
             {
                 File.Delete(testRunnnerConfigPath);
             }
-            System.IO.File.Move("App.config", "ConsoleTestRunner.exe.config");
+            System.IO.File.Copy("App.config", "ConsoleTestRunner.exe.config");
             return true;
         }
     }
